@@ -1,4 +1,4 @@
-bot_rules:
+bots:
   - name: block-known-crawlers
     user_agent_regex: "(?i)(GPTBot|ChatGPT-User|OAI-SearchBot|ClaudeBot|anthropic-ai|Claude-Web|Google-Extended|Google-CloudVertex|Gemini-Deep-Research|PerplexityBot|Perplexity-User|Bytespider|CCBot|Applebot-Extended|cohere-ai|FacebookBot|Meta-ExternalAgent|Meta-ExternalFetcher|Amazonbot|Diffbot|MistralAI-User|DuckAssistBot|YouBot|ImagesiftBot|Omgilibot|webzio)"
     action: DENY
@@ -7,5 +7,5 @@ bot_rules:
     user_agent_regex: ".*"
     action: CHALLENGE
     challenge:
-      type: pow
-      difficulty: 4
+      algorithm: fast
+      difficulty: 5
