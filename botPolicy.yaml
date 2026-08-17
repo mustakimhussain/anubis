@@ -4,7 +4,7 @@ bots:
     user_agent_regex: "(?i)(GPTBot|ChatGPT-User|OAI-SearchBot|ClaudeBot|anthropic-ai|Claude-Web|Google-Extended|Google-CloudVertex|Gemini-Deep-Research|PerplexityBot|Perplexity-User|Bytespider|CCBot|Applebot-Extended|cohere-ai|FacebookBot|Meta-ExternalAgent|Meta-ExternalFetcher|Amazonbot|Diffbot|MistralAI-User|DuckAssistBot|YouBot|ImagesiftBot|Omgilibot|webzio)"
     action: DENY
     
-  - name: challenge-all-traffic
+  - name: challenge-rest
     user_agent_regex: ".*"
     action: CHALLENGE
     challenge:
